@@ -32,3 +32,15 @@ Your final notebook must:
 * Perform a weather check on each of the cities using a series of successive API calls.
 * Include a print log of each city as it's being processed with the city number and city name.
 * Save a CSV of all retrieved data and a PNG image for each scatter plot.
+
+## Part II - VacationPy
+Now let's use your skills in working with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
+* Note: if you having trouble displaying the maps try running jupyter nbextension enable --py gmaps in your environment and retry.
+* Create a heat map that displays the humidity for every city from the part I of the homework.
+* Narrow down the DataFrame to find your ideal weather condition. For example:
+    * A max temperature lower than 80 degrees but higher than 70.
+    * Wind speed less than 10 mph.
+    * Zero cloudiness.
+    * Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
+* Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
+* Plot the hotels on top of the humidity heatmap with each pin containing the Hotel Name, City, and Country.
